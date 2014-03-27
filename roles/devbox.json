@@ -5,5 +5,5 @@
   "json_class": "Chef::Role",
   "description": "Dev box setup",
   "chef_type": "role",
-  "run_list": [ "recipe[accounts]", "recipe[chefme]" ]
+  "run_list": [ "recipe[accounts]", "recipe[runchef]" ]
 }
