@@ -4,4 +4,4 @@ echo "Updating cookbooks and roles..."
 cd <%= @chefhome %> 
 git pull origin master
 echo "Chefing...."
-slc enaable ruby1.9.2 'chef-solo -j <%= @chefhome %>/runlist.json'
+chef-solo -j <%= @chefhome %>/runlist.json
