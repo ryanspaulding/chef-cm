@@ -33,7 +33,7 @@ then
 fi
 
 log "Installing Ruby 1.9.3"
-yum install -y ruby193 
+yum install -y ruby193 ruby193-ruby-devel
 
 log "Installing Chef"
 scl enable ruby193 'gem install chef' | tee -a ${LOGFILE} 
