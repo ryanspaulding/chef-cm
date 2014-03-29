@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOGFILE="/root/bootstrap.log"
+LOGFILE="/tmp/bootstrap.log"
 CHEFCONFIG="/etc/chef/"
 CHEFFILES="/var/chef-solo/"
 GITURL="https://github.com/ryanspaulding/chef-cm.git"
