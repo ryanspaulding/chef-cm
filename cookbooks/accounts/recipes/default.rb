@@ -14,3 +14,10 @@ user "ryans" do
     supports :manage_home => true
     home "/home/ryans"  
 end
+
+directory "/home/ryans/.ssh" do
+    owner 'ryans'
+    group 'dev'
+    mode 0700
+    action :create
+end
