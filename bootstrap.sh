@@ -16,7 +16,7 @@ fi
 
 # yum update 
 log "Updating System"
-yum check-update | tee -a ${LOGFILE}
+yum update -y | tee -a ${LOGFILE}
 
 log "Installing packages needed for Chef"
 yum install -y git ruby ruby-devel rubygems rubygems-devel gcc | tee -a ${LOGFILE}
@@ -64,3 +64,5 @@ fi
 
 log "Cheffing!!!!!"
 chef-solo -j ${CHEFFILES}runlist.json | tee -a ${LOGFILE}
+
+reboot
