@@ -6,8 +6,11 @@ group "dev" do
     system false
 end
 
-user "systemguy" do
-  comment "system guy"
-  system true
-  shell "/bin/false"
+user "ryans" do
+    comment "ryan@climatemonkeys.com"
+    system false 
+    shell "/bin/bash"
+    gid "dev"
+    supports :manage_home => true
+    home "/home/ryans"  
 end
