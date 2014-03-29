@@ -6,7 +6,7 @@ To run bootstrap in one command use the following. Note you must be root to run 
 
 `curl -L https://raw.githubusercontent.com/ryanspaulding/chef-cm/master/bootstrap.sh | bash`
 
-Note you could also download the file to the system and run it. 
+Note you could also download the file to the system and run it. If you want to run this during the EC2 spinup process you will need to go to https://raw.githubusercontent.com/ryanspaulding/chef-cm/master/bootstrap.sh and copy the contents of the page. Then paste this into the user data field on step 3 of the setup process. Once the system is spinning up you can tail the log file under /tmp/bootstap.log. 
 
 Chef
 -----------
